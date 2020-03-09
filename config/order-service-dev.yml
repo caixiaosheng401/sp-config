@@ -5,7 +5,7 @@ spring:
     config:
        override-none: true
 #配置rabbitMQ链接信息：
-  rabbit:
+  rabbitmq:
        host: 192.168.80.84
        port: 5672
        username: admin
