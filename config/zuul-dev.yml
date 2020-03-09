@@ -4,7 +4,14 @@ spring:
   cloud:
     config:
        override-none: true
-  
+#配置rabbitMQ链接信息：
+  rabbit:
+       host: 192.168.80.84
+       port: 5672
+       username: admin
+       password: admin
+
+
 server:
   port: 7002
   
@@ -12,6 +19,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka 
+      
+      
       
  #配置转发的路由规则：
  #下面的配置是默认的路由规则
